@@ -6,27 +6,27 @@ import httpclient from "../commons/httpclient";
 
 const getEmployees
         = () => {
-    return httpclient.get('/myfirstreact/employees');
+    return httpclient.get('/employees');
     
 }
 
 const postEmployee = (data) =>{
-    return httpclient.post('/myfirstreact/employees', data)
+    return httpclient.post('/employees', data)
 
 }
 const getEmployee
     = (employeeId) => {
-    return httpclient.get(`/myfirstreact/employees/${employeeId}`);
+    return httpclient.get(`/employees/${employeeId}`);
 }
 
 const putEmployee = (data) =>{
-    return httpclient.post('/myfirstreact/employees', data)
+    return httpclient.post('/employees', data)
 
 }
 
 
 const deleteEmployee = (employeeId) =>{
-    return httpclient.delete(`/myfirstreact/employees/${employeeId}`)
+    return httpclient.delete(`/employees/${employeeId}`)
 }
 
 export default {getEmployees, postEmployee, putEmployee, getEmployee, deleteEmployee}
