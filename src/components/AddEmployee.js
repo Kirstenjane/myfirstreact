@@ -21,7 +21,7 @@ const AddEmployee = () =>{
                 .then(
                     response =>{
                         console.log("updated employee", response. data)
-                        navigate("/employees")
+                        navigate("/myfirstreact/employees")
                     }
                 )
                 .catch(
@@ -40,7 +40,7 @@ const AddEmployee = () =>{
                 .then(
                     response =>{
                         console.log("added new employee", response. data)
-                        navigate("/employees")
+                        navigate("/myfirstreact/employees")
                     }
                 )
                 .catch(
@@ -95,6 +95,7 @@ const AddEmployee = () =>{
                     <input
                         type="text"
                         className="form-control"
+                        value={name}
                         id="name"
                         placeholder="Add Employee name"
                         onChange= {
@@ -109,6 +110,7 @@ const AddEmployee = () =>{
                     <input
                         type="text"
                         className="form-control"
+                        value={location}
                         id="location"
                         placeholder="Add location"
                     onChange= {
@@ -124,6 +126,7 @@ const AddEmployee = () =>{
                     <input
                         type="text"
                         className="form-control"
+                        value={department}
                         id="department"
                         placeholder="Add Employee department"
                     onChange= {
